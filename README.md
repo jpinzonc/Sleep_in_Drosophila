@@ -4,6 +4,8 @@ an experiment using the DAM system.
 
 Usage:
 pyhton sleep.py filename [f/s/a]
+
+ filename is the file produced during the experiment by the DAM system. 
  
  f = "final" result, a three column data frame with sample number, and the day and night sleep numbers
  s = "summary" a summary of the sleep data per hour 
