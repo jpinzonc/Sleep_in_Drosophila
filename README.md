@@ -26,5 +26,5 @@ Example_sleep.txt is a test file, run this command to test
 
 > python sleep.py Example_sleep.txt f
 
-The script was writen in Python 3.6, using pandas. 
+The script was writen in Python 3.6, using pandas (0.23.0), numpy (1.14.3), and os. 
 
