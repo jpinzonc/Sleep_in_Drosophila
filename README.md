@@ -1,11 +1,15 @@
-## DROSOPHILA SLEEP 
+## DROSOPHILA SLEEP ACTIVITY
 
 Python script designed to estimate the sleep time in Drosophila flies during
 an experiment using the Drosophila Activity Monitor (DAM) system. 
 
+# Purpose:
+Develop an script that can read and calculate the activity of the flies in the DAM system.
+
+# Estrategy:
 The script calculates the sleep numbers on a single monitor file. 
 
-Usage:
+# Usage:
 
 > pyhton sleep.py filename [f/s/a]
 
