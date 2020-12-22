@@ -1,0 +1,55 @@
+---
+title: "FLIC - Preference Index calculations (Towards Well A)"
+author: "JP"
+date: "November 10, 2016"
+output: html_document
+---
+## Preference index calculations using myFLIC functions
+
+```{r setup, include=FALSE, echo=F}
+#Clean the environmenta and load the functions. 
+library(knitr)
+library(dplyr)
+knitr::opts_chunk$set(echo = F)
+rm(list = ls()) 
+# Change this directory to where myFLIC.R file is located
+#setwd("/Users/jpinzon/Documents/UTSW/Projects/01 Jmjc Project/03 Feeding preference/00 FLIC/")
+source("/Users/jpinzon/Documents/UTSW/Projects/01 Jmjc Project/03 Feeding preference/00 FLIC/myFLIC.R")
+```
+
+These are general commands that refer to a particular set of functions to determine the preference index on a
+determined test (i.e. path_to_file). 
+
+There are additional options in the source file. 
+
+```{r, echo = FALSE, results="hide"}
+# Change the path accordinly to where the DFM files are. 
+path_to_files="/Users/jpinzon/Documents/UTSW/Projects/01 Jmjc Project/03 Feeding preference/00 FLIC/70119m1-5"
+
+# PI based on counts
+PIs_counts=sum_PI(path_to_files,0,1,1)
+PIs_counts_t=kable(PIs_counts, align='c', caption="PI based on counts")
+
+# PI based on duration of the events
+PIs_duration=sum_PI(path_to_files,0,2,1)
+PIs_duration_t=kable(PIs_duration, align='c', caption="PI based on duration of the events")
+
+# Summary of licks based on duration
+resu_Licks=sum_PI(path_to_files,0,3,1)
+resu_Licks_t=kable(resu_Licks, align='c', caption="Summary licks (based on dutarion)")
+
+# Summary based on duration
+resu_All=(sum_PI(path_to_files,0,3,4))
+resu_All_t=kable(resu_All, align='c', caption="Summary ALL events (based on dutarion)")
+```
+ __These are the PI's by duration for all licks:__
+`r PIs_duration_t`
+
+ __These are the PI's by counts for all licks:__
+`r PIs_counts_t`
+
+ __Summary of counts and times for all licks:__
+`r resu_Licks_t`
+
+ __Summary of counts and times for all events:__
+`r resu_All_t`

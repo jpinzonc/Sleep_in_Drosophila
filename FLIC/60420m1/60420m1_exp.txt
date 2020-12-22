@@ -1,0 +1,13 @@
+4.20.2016
+
+Alcohol test on "Pre-exposed" White Berlin males. 
+
+Choice btw: Sucrose 150mM+Ethanol 15% and Sucrose 150mM
+
+1. 3 hrs starvation, 3 flies per chamber, 2hrs test 
+2. 5 hrs starvation, 3 flies per chamber, 2hrs test
+
+Videos were recorded on DFM_1 and on DFM_2.
+
+DFM	Chamber Fly (E = Ethanol, A = Air)1	1	E31	2	E31	3	E31	4	A31	5	A31	6	A32	1 	A52	2	A52	3	A52	4	E52	5	E52	6	E5
+
